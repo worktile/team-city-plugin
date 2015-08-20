@@ -136,12 +136,16 @@
 												<tr style="border:none;"><td style="vertical-align:text-top; padding-top:0.33em;">Payload Format:</td>
 													<td colspan=2>
 														<table style="padding:0; margin:0; left: 0px;" id="payloadFormatTable"><tbody style="padding:0; margin:0; left: 0px;">
-															<c:forEach items="${formatList}" var="format">
+														<!--<c:forEach items="${formatList}" var="format">
 																<tr style="padding:0; margin:0; left: 0px;"><td style="padding:0; margin:0; left: 0px;"><label style='white-space:nowrap;'>
 																	<input style="vertical-align:text-bottom;" class="payloadFormat" id="payloadFormat_${format.formatShortName}" name="payloadFormat" type="radio" value="${format.formatShortName}" />
 																	${format.formatDescription}</label>
 																	</td></tr>
-															</c:forEach>
+															</c:forEach>-->
+															<tr style="padding:0; margin:0; left: 0px;"><td style="padding:0; margin:0; left: 0px;"><label style='white-space:nowrap;'>
+																	<input style="vertical-align:text-bottom;" class="payloadFormat" id="payloadFormat_json" name="payloadFormat" type="radio" checked="checked" value="json" />
+																	JSON</label>
+																	</td></tr>
 														</tbody></table>
 													</td>
 												</tr>
